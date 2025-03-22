@@ -31,5 +31,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/testing:cyptoAPI-${{ github.sha }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/cyber:cyptoAPI-${{ github.sha }}
 
