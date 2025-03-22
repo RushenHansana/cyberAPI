@@ -25,7 +25,7 @@ logs/
 # Docker-related files
 docker-compose.yml
 .dockerignore
-Dockerfile
+
 
 # Ignore IDE/editor settings
 .vscode/
