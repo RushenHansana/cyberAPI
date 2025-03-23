@@ -53,7 +53,7 @@ def generate_key(request: KeyRequest):
         key_id = str(len(keys) + 1+ len(rsa_keys))
         keys[key_id] = key
         return {"key_id": key_id, "key_value": base64.b64encode(key).decode()}
-    elif request.key_type == 'RSA':
+    elif request.key_type == 'RSA'and request.key_size in [2048, 3072, 4096]:
         private_key = rsa.generate_private_key(
             public_exponent=65537,
             key_size=request.key_size,
